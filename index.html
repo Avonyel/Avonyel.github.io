@@ -2,31 +2,40 @@
 <html>
   <head>
     <title>Stephanie Barker, Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Stephanie Barker</h1>
-      <h2>Web Developer</h2>
-      <ul class="nav">
-        <a href="#projects"><li>Projects</li></a>
-        <a href="#technologies"><li>Technologies</li></a>
-        <a href="#experience"><li>Experience</li></a>
-        <a href="#contact"><li>Contact</li></a>
-      </ul>
+    <header class="jumbotron">
+      <div class="container">
+        <h1>Stephanie Barker</h1>
+        <h2>Full-Stack Web Developer</h2>
+      </div>
+      <nav>
+        <div class="container">
+          <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item"><a href="#projects" data-toggle="tab" >Projects</a></li>
+            <li class="nav-item"><a href="#technologies" data-toggle="tab">Technologies</a></li>
+            <li class="nav-item"><a href="#experience" data-toggle="tab">Experience</a></li>
+            <li class="nav-item"><a href="#contact" data-toggle="tab">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <main>
-      <section id="projects">
+    <main class="tab-content container">
+      <section class="tab-pane active" id="projects" >
         <h2>Projects</h2>
         <h3><a href="https://github.com/Avonyel/project_djello">Djello</a></h3>
         <p>A task-management system built with React/Redux and NodeJS/Express.</p>
         <h3><a href="https://github.com/Avonyel/project_fideligard_spa">Fideligard</a></h3>
         <p>A historical stock portfolio simulator built with React/Redux and NodeJS/Express.</p>
       </section>
-      <section id="technologies">
+      <section id="technologies" class="tab-pane" role="tabpanel">
         <h2>Technologies</h2>
-        <div class="technologies">
-          <div>
+        <div class="row">
+          <div class="col-sm-6">
             <h3>Front End</h3>
             <ul>
               <li>Javascript</li>
@@ -39,7 +48,7 @@
               <li>Bootstrap</li>
             </ul>
           </div>
-          <div>
+          <div class="col-sm-6">
             <h3>Back End</h3>
             <ul>
               <li>Node.js</li>
@@ -53,12 +62,12 @@
           </div>
         </div>
       </section>
-      <section id="experience">
+      <section id="experience" class="tab-pane" role="tabpanel">
         <h2>Experience</h2>
         <h3>Viking Education</h3>
         <p>Intensive, accelerated web development training program. Built full-stack web applications with Node.js, Express.js, PostreSQL, MongoDB, React/Redux, JavaScript, CSS with Sass preprocessing and HTML5. Applications include a digital storefront and a to-do list app with cross-user list sharing.</p>
       </section>
-      <section id="contact">
+      <section id="contact" class="tab-pane" role="tabpanel">
         <h2>Contact</h2>
         <p>
           <a href="mailto:song_mage@yahoo.com">song_mage@yahoo.com</a><br>
