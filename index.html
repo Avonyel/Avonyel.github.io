@@ -3,6 +3,7 @@
   <head>
     <title>Stephanie Barker, Web Developer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -27,10 +28,43 @@
     <main class="tab-content container">
       <section class="tab-pane active" id="projects" >
         <h2>Projects</h2>
-        <h3><a href="https://github.com/Avonyel/project_djello">Djello</a></h3>
-        <p>A task-management system built with React/Redux and NodeJS/Express.</p>
-        <h3><a href="https://github.com/Avonyel/project_fideligard_spa">Fideligard</a></h3>
-        <p>A historical stock portfolio simulator built with React/Redux and NodeJS/Express.</p>
+        <div class="row">
+            
+          <div class="col-sm-5">
+            <div class="thumbnail">
+              <a href="./images/bluejay.png"><img src="./images/bluejay.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <h3><a href="https://classroom-bluejay.herokuapp.com">Bluejay</a></h3>
+            <a href="https://github.com/Avonyel/final_project">Github repo</a>
+            <p>A productivity app for teachers and students build with React/Redux, NodeJS/Express, and MongoDB</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 col-sm-push-7">
+            <div class="thumbnail">
+              <a href="./images/djello.png"><img src="./images/djello.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-7 col-sm-pull-5">
+          <h3><a href="https://super-djello.herokuapp.com">Djello</a></h3>
+          <a href="https://github.com/Avonyel/project_djello">Github repo</a>
+          <p>A task-management system built with React/Redux and NodeJS/Express.</p>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="thumbnail">
+              <a href="./images/buddy-system.png"><img src="./images/buddy-system.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <h3><a href="https://the-buddy-system.herokuapp.com">The Buddy System</a></h3>
+            <a href="https://github.com/Avonyel/buddy_system">Github repo</a>
+            <p>A to-do list app based around increasing accountability by making a friend check off your to-dos! Built with NodeJS/Express using a PostgreSQL database and Handlebars.js for templating.</p>
+          </div>
+        </div>
       </section>
       <section id="technologies" class="tab-pane" role="tabpanel">
         <h2>Technologies</h2>
