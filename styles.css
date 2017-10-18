@@ -2,17 +2,43 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+  color: #333;
 }
 
-h1,
+.jumbotron h1,
 h2,
 h3 {
   font-family: "Alfa Slab One", sans-serif;
+  color: black;
+}
+
+h3 {
+  color: #900;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: #666;
+}
+
+a {
+  color: #900;
+}
+
+a:hover {
+  color: #c33;
 }
 
 .jumbotron {
   padding-top: 20px;
   padding-bottom: 0;
+}
+
+.jumbotron h2 {
+  color: #900;
 }
 
 .nav-pills {
@@ -25,4 +51,13 @@ h3 {
 .nav-pills li {
   display: inline-block;
   float: none;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus {
+  background-color: #aaa;
 }
